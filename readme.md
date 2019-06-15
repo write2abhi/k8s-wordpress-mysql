@@ -4,11 +4,11 @@ Wordpress is deployed to *wordpress* namespace and MySQL is deployed to *mysql* 
 
 - To test hpa follow below steps:
 
-kubectl run -i --tty load-generator --image=busybox /bin/sh
+    kubectl run -i --tty load-generator --image=busybox /bin/sh
 
-Hit enter for command prompt
+    Hit enter for command prompt
 
-while true; do wget -q -O- http://wordpress.wordpress.svc.cluster.local; done
+    while true; do wget -q -O- http://wordpress.wordpress.svc.cluster.local; done
 
 
 Note: 
