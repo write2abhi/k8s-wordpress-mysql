@@ -1,4 +1,4 @@
-This repo consists k8s mnifest files to deploy a two tier Wordpress MySQL application. 
+This repo consists of k8s mnifest files to deploy a two tier Wordpress MySQL application. 
 
 Wordpress is deployed to *wordpress* namespace and MySQL is deployed to *mysql* namespace. 
 
