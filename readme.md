@@ -12,7 +12,7 @@ Wordpress is deployed to *wordpress* namespace and MySQL is deployed to *mysql* 
 
 
 Note: 
-A load-generator pod is alredy crated in wordpress namespace. 
+A load-generator pod is already deployed in wordpress namespace. 
 
 To access wordpress in browser use below command to get external IP:
 kubectl get svc wordpress -n wordpress
