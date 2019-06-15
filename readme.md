@@ -15,7 +15,7 @@ Note:
 A load-generator pod is already deployed in wordpress namespace. 
 
 To access wordpress in browser use below command to get external IP:
-kubectl get svc wordpress -n wordpress
+ - kubectl get svc wordpress -n wordpress
 
 To access the currently running wordpress application use below url:
-http://35.226.8.31
+ - http://35.226.8.31
