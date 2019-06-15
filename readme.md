@@ -2,11 +2,14 @@ This repo consists of k8s mnifest files to deploy a two tier Wordpress MySQL app
 
 Wordpress is deployed to *wordpress* namespace and MySQL is deployed to *mysql* namespace. 
 
-To test hpa follow below steps:
+- To test hpa follow below steps:
 
-1. Exec into load-generator pod in wordpress namespace and run below command
+kubectl run -i --tty load-generator --image=busybox /bin/sh
+
+Hit enter for command prompt
 
 while true; do wget -q -O- http://wordpress.wordpress.svc.cluster.local; done
+
 
 Note: 
 A load-generator pod is alredy crated in wordpress namespace. 
